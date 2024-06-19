@@ -510,10 +510,12 @@ footer a {
 
     nav.mobile-nav {
         display: block; /* Show mobile nav at smaller screens */
+        position: fixed;
     }
 
     #menuBtn {
         display: block; /* Show menu button at smaller screens */
+        position: fixed;
         transition: transform 0.4s; /* Add transition for menu button */
     }
 
