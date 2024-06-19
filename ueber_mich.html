@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DomeTECH GmbH - Mehr zu meiner Person und meinem Unternehmen</title>
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts/Montserrat-Alt1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<header>
+    <nav class="desktop-nav">
+        <ul>
+            <a href="index.html"><img src="images/logo_mit_text.png"></a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="dienstleistungen.html"><li>Dienstleistungen</li></a>
+            <a href="referenzen.html"><li>Referenzen</li></a>
+            <a href="ueber_mich.html"><li>Über mich</li></a>
+            <a href="kontakt.html"><li>Kontakt</li></a>
+            <a href="partner.html"><li>Partner</li></a>
+        </ul>
+    </nav>
+
+    <nav class="mobile-nav">
+        <ul class="collapsed">
+            <a href="index.html"><li>Home</li></a>
+            <a href="dienstleistungen.html"><li>Dienstleistungen</li></a>
+            <a href="referenzen.html"><li>Referenzen</li></a>
+            <a href="ueber_mich.html"><li>Über mich</li></a>
+            <a href="kontakt.html"><li>Kontakt</li></a>
+            <a href="partner.html"><li>Partner</li></a>
+        </ul>
+    </nav>
+    <img id="menuBtn" src="images/menu2.png" alt="Menu Button">
+</header>
+
+<body>
+    <section id="dienstleistungen">
+
+        <div class="right-container">
+
+                    <div class="top-container">
+                        <h1 class="rest-h1">ÜBER MICH</h1>
+                    </div>
+                    <div class="flex-container">
+                        
+                        <div class="lebenslauf">
+                            <h3>Gründung DomeTECH GmbH</h3>
+                            <p>2023</p>
+                            <div class="strich"></div>
+                            <h3>Projekt- & Produktionsleiter</h3>
+                            <p>2019 - 2023</p>
+                            <div class="strich"></div>
+                            <h3>Metallbaukonstrukteur FA</h3>
+                            <p>2015 - 2019</p>
+                            <div class="strich"></div>
+                            <h3>Metallbaukonstrukteur EFZ</h3>
+                            <p>2010 - 2015</p>
+                            <div class="strich"></div>
+                            <h3>Metallbauer</h3>
+                            <p>2005 - 2010</p>
+                        </div>
+                        <div class="profil">
+                            <img class="profil-pic" src="images/dominique_furrer.jpg">
+                            <h3><b>Dominique Furrer</b></h3>
+                            <p><i>Inhaber & Geschäftsführer</i></p>
+                            <br>
+                            <p>Metallbaukonstrukteur FA</p>
+                            <div class="profil-flex">
+                                <a href="tel:+41795906818"><div class="link-icon"><img src="images/phone.png"></div></a>
+                                <a href="mailto:d.furrer@dometech.ch"><div class="link-icon"><img src="images/mail.png"></div></a>
+                                <a href="https://www.linkedin.com/in/dominique-furrer-606835231/?originalSubdomain=ch" target="_blank"><div class="link-icon"><img src="images/linkedin.png"></div></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+        </div>
+    
+    </section>
+
+    <footer>
+        <p>DomeTECH GmbH | Längmatt 2 | 6218 Ettiswil | +41 79 590 68 18 | dometech@dometech.ch | ©  2023 DomeTECH GmbH. all rights reserved.</p>
+        <div class="icons"><img src="images/facebook-icon.png"><img src="images/linkedin-icon.png"><img src="images/instagram-icon.png"></div>
+        <div class="links"><a href="">Impressum</a><a href="">Datenschutz</a></div>
+     </footer>
+        
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const navList = document.querySelector('.mobile-nav ul');
+    let isExpanded = false; // Track menu state
+
+    // Initial state: hide mobile nav and cancel icon
+    mobileNav.style.display = 'none'; // Initially hide mobile nav
+    menuBtn.classList.remove('clicked');
+
+    menuBtn.addEventListener('click', function() {
+        if (isExpanded) {
+            mobileNav.style.transition = 'opacity 0.4s, transform 0.4s'; // Add transition
+            mobileNav.style.opacity = '0'; // Fade out mobile nav
+            mobileNav.style.transform = 'translateY(-100%)'; // Slide out mobile nav
+            menuBtn.src = 'images/menu2.png'; // Change back to menu icon with transition
+            isExpanded = false; // Update menu state
+        } else {
+            mobileNav.style.transition = 'opacity 0.4s, transform 0.4s'; // Add transition
+            mobileNav.style.display = 'block';
+            setTimeout(() => { // Delay to allow display change before transition
+                mobileNav.style.opacity = '1'; // Fade in mobile nav
+                mobileNav.style.transform = 'translateY(0)'; // Slide in mobile nav
+            }, 10);
+            menuBtn.src = 'images/cancel.png'; // Change to cancel icon with transition
+            isExpanded = true; // Update menu state
+        }
+    });
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DomeTECH GmbH - Ihr Planer und Zeichner im Bereich Metallbau</title>
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts/Montserrat-Alt1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<header>
+    <nav class="desktop-nav">
+        <ul>
+            <a href="index.html"><img src="images/logo_mit_text.png"></a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="dienstleistungen.html"><li>Dienstleistungen</li></a>
+            <a href="referenzen.html"><li>Referenzen</li></a>
+            <a href="ueber_mich.html"><li>Über mich</li></a>
+            <a href="kontakt.html"><li>Kontakt</li></a>
+            <a href="partner.html"><li>Partner</li></a>
+        </ul>
+    </nav>
+
+    <nav class="mobile-nav">
+        <ul class="collapsed">
+            <a href="index.html"><li>Home</li></a>
+            <a href="dienstleistungen.html"><li>Dienstleistungen</li></a>
+            <a href="referenzen.html"><li>Referenzen</li></a>
+            <a href="ueber_mich.html"><li>Über mich</li></a>
+            <a href="kontakt.html"><li>Kontakt</li></a>
+            <a href="partner.html"><li>Partner</li></a>
+        </ul>
+    </nav>
+    <img id="menuBtn" src="images/menu2.png" alt="Menu Button">
+</header>
+
+<body>
+    <section id="dienstleistungen">
+
+        <div class="right-container">
+
+                    <div class="top-container">
+                        <h1 class="rest-h1">KONTAKT</h1>
+                    </div>
+                    <div class="greyer">
+                        <div class="top-map">
+                            <h3>DomeTECH GmbH<br>Längmatt 2<br>6218 Ettiswil<br><br>+41 (0)79 590 68 18<br>d.furrer@dometech.ch</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10854.285638677651!2d8.0198651!3d47.1466622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478fdf4c5aff5ff3%3A0x8bef063394a22b5a!2sDomeTECH%20GmbH!5e0!3m2!1sde!2sch!4v1718271797054!5m2!1sde!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h1><b>Kontaktformular</b></h1>
+                        <form>
+                            <label for="firmenname"></label>
+                            <input type="text" id="firmenname" name="firmenname" placeholder="Firmenname">
+                
+                            <label for="vorname"></label>
+                            <input type="text" id="vorname" name="vorname" placeholder="Vorname *" required>
+                
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Name *" required>
+                
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="E-Mail *" required>
+                
+                            <label for="telefonnummer"></label>
+                            <input type="tel" id="telefonnummer" name="telefonnummer" placeholder="Telefonnummer">
+                
+                            <label for="textarea"></label>
+                            <textarea id="textarea" name="textarea" placeholder="Ihre Nachricht..."></textarea>
+                
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="datenschutz" name="datenschutz" required>
+                                <label for="datenschutz"><p>Ich bin mit der Verarbeitung meiner Personendaten gemäss Datenschutzerklärung einverstanden. *</p></label>
+                            </div>
+                
+                            <button type="submit">Senden</button>
+                        </form>
+                    </div>
+                    
+        </div>
+    
+    </section>
+
+    <footer>
+        <p>DomeTECH GmbH | Längmatt 2 | 6218 Ettiswil | +41 79 590 68 18 | dometech@dometech.ch | ©  2023 DomeTECH GmbH. all rights reserved.</p>
+        <div class="icons"><img src="images/facebook-icon.png"><img src="images/linkedin-icon.png"><img src="images/instagram-icon.png"></div>
+        <div class="links"><a href="">Impressum</a><a href="">Datenschutz</a></div>
+     </footer>
+        
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const navList = document.querySelector('.mobile-nav ul');
+    let isExpanded = false; // Track menu state
+
+    // Initial state: hide mobile nav and cancel icon
+    mobileNav.style.display = 'none'; // Initially hide mobile nav
+    menuBtn.classList.remove('clicked');
+
+    menuBtn.addEventListener('click', function() {
+        if (isExpanded) {
+            mobileNav.style.transition = 'opacity 0.4s, transform 0.4s'; // Add transition
+            mobileNav.style.opacity = '0'; // Fade out mobile nav
+            mobileNav.style.transform = 'translateY(-100%)'; // Slide out mobile nav
+            menuBtn.src = 'images/menu2.png'; // Change back to menu icon with transition
+            isExpanded = false; // Update menu state
+        } else {
+            mobileNav.style.transition = 'opacity 0.4s, transform 0.4s'; // Add transition
+            mobileNav.style.display = 'block';
+            setTimeout(() => { // Delay to allow display change before transition
+                mobileNav.style.opacity = '1'; // Fade in mobile nav
+                mobileNav.style.transform = 'translateY(0)'; // Slide in mobile nav
+            }, 10);
+            menuBtn.src = 'images/cancel.png'; // Change to cancel icon with transition
+            isExpanded = true; // Update menu state
+        }
+    });
+});
+    </script>
+</body>
+</html>
