@@ -165,7 +165,6 @@ h3 {
     justify-content: center;
     font-size: 1.4rem;
     border: 2px solid white;
-    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 0.5rem;
     padding: 0.7rem 1.2rem;
     width: 250px;
@@ -529,6 +528,9 @@ footer a {
 
     nav.mobile-nav ul.collapsed {
         padding-top: 50px; /* Adjust padding-top for collapsed mobile nav */
+    }
+    .main-title > a {
+        background-color: rgba(0, 0, 0, 0.6);
     }
 
     .right-container, footer p, footer .links, footer .icons {
