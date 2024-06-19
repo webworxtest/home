@@ -260,7 +260,7 @@ h3 {
 .second-row {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 3rem 1rem 3rem 5rem;
+    padding: 3rem 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 60px;
@@ -275,28 +275,18 @@ h3 {
 }
 
 /* -------------------- REFERENZEN -------------------- */
-.projekt {
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -5rem;
-}
-.projekt div img {
+.ref-pic {
     display: flex;
     margin: 0 auto -1rem auto;
     width: 8rem;
     height: auto;
 }
-.projekt h3 {
-    padding: 1rem 2rem;
-}
 
 .referenz {
     max-width: 380px;
     overflow: hidden;
+    margin: 0 auto;
 }
-
 .referenz img {
     width: 100%;
     transition: transform 0.4s ease;
