@@ -277,8 +277,8 @@ h3 {
 /* -------------------- REFERENZEN -------------------- */
 .ref-pic {
     display: flex;
-    margin: 0 auto -1rem auto;
-    width: 8rem;
+    margin: 0 auto 0rem auto;
+    width: 7rem;
     height: auto;
 }
 
