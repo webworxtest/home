@@ -280,6 +280,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -5rem;
 }
 .projekt div img {
     display: flex;
@@ -496,6 +497,9 @@ footer a {
 @media screen and (max-width: 1250px) {
     .second-row {
         padding: 3rem 1rem 3rem 3rem;
+    }
+    .projekt {
+        margin-left: -2rem;
     }
 }
 @media screen and (max-width: 1100px) {
