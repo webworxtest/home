@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DomeTECH GmbH - Ihr Planer und Zeichner im Bereich Metallbau</title>
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts/Montserrat-Alt1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<header>
+    <nav class="desktop-nav">
+        <ul>
+            <a href="index.html"><img src="images/logo_mit_text.png"></a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="dienstleistungen.html"><li>Dienstleistungen</li></a>
+            <a href="referenzen.html"><li>Referenzen</li></a>
+            <a href="ueber_mich.html"><li>Über mich</li></a>
+            <a href="kontakt.html"><li>Kontakt</li></a>
+            <a href="partner.html"><li>Partner</li></a>
+        </ul>
+    </nav>
+
+    <nav class="mobile-nav">
+        <ul class="collapsed">
+            <a href="index.html"><li>Home</li></a>
+            <a href="dienstleistungen.html"><li>Dienstleistungen</li></a>
+            <a href="referenzen.html"><li>Referenzen</li></a>
+            <a href="ueber_mich.html"><li>Über mich</li></a>
+            <a href="kontakt.html"><li>Kontakt</li></a>
+            <a href="partner.html"><li>Partner</li></a>
+        </ul>
+    </nav>
+    <img id="menuBtn" src="images/menu2.png" alt="Menu Button">
+</header>
+
+<body>
+    <section>
+
+        <div class="right-container">
+
+                    <div class="top-container">
+                        <h1 class="rest-h1">Impressum</h1>
+                    </div>
+
+                    <div class="containers">
+                        <h3>Impressum</h3><br>
+                        <p>DomeTECH GmbH<br>Längmatt 2<br>6218 Ettiswil<br>Schweiz<br><br>
+                            
+                            <b>E-Mail:</b> dometech@dometech.ch<br><br>
+                            
+                            <b>Vertretungsberechtigte Person(en):</b><br>
+                            Dominique Furrer, Inhaber & Geschäftsführer<br><br>
+                            
+                            <b>Handelsregister-Eintrag:</b><br>
+                            Eingetragener Firmenname: DomeTECH GmbH<br>
+                            Handelsregister Nr.: CHE-143.600.686<br>
+                            Kanton: Luzern<br><br><br>
+                            
+                            
+                            
+                            <b>Haftungsausschluss</b><br>
+                            Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen Richtigkeit, Genauigkeit, Aktualität, 
+                            Zuverlässigkeit und Vollständigkeit der Informationen.<br><br>
+                            
+                            Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder 
+                            der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der Verbindung oder durch 
+                            technische Störungen entstanden sind, werden ausgeschlossen.
+                            Alle Angebote sind unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte 
+                            Angebot ohne besondere Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder 
+                            endgültig einzustellen.<br><br>
+                            
+                            <b>Haftungsausschluss für Links</b><br>
+                            Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche 
+                            Verantwortung für solche Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene 
+                            Gefahr des jeweiligen Nutzers.<br><br>
+                            
+                            <b>Urheberrechte</b><br>
+                            Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, 
+                            gehören ausschliesslich der Firma DomeTECH GmbH oder den speziell genannten Rechteinhabern. Für die Reproduktion 
+                            jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.<br><br>
+                            
+                            Quelle: SwissAnwalt</p>
+                    </div>
+                    
+        </div>
+    
+    </section>
+
+    <footer>
+        <p>DomeTECH GmbH | Längmatt 2 | 6218 Ettiswil | +41 79 590 68 18 | dometech@dometech.ch | ©  2023 DomeTECH GmbH. all rights reserved.</p>
+        <p><b>powered by WEB-WORX</b></p>
+        <div class="icons"><img src="images/facebook-icon.png"><img src="images/linkedin-icon.png"><img src="images/instagram-icon.png"></div>
+        <div class="links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+     </footer>
+        
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const navList = document.querySelector('.mobile-nav ul');
+    let isExpanded = false; // Track menu state
+
+    // Initial state: hide mobile nav and cancel icon
+    mobileNav.style.display = 'none'; // Initially hide mobile nav
+    menuBtn.classList.remove('clicked');
+
+    menuBtn.addEventListener('click', function() {
+        if (isExpanded) {
+            mobileNav.style.transition = 'opacity 0.4s, transform 0.4s'; // Add transition
+            mobileNav.style.opacity = '0'; // Fade out mobile nav
+            mobileNav.style.transform = 'translateY(-100%)'; // Slide out mobile nav
+            menuBtn.src = 'images/menu2.png'; // Change back to menu icon with transition
+            isExpanded = false; // Update menu state
+        } else {
+            mobileNav.style.transition = 'opacity 0.4s, transform 0.4s'; // Add transition
+            mobileNav.style.display = 'block';
+            setTimeout(() => { // Delay to allow display change before transition
+                mobileNav.style.opacity = '1'; // Fade in mobile nav
+                mobileNav.style.transform = 'translateY(0)'; // Slide in mobile nav
+            }, 10);
+            menuBtn.src = 'images/cancel.png'; // Change to cancel icon with transition
+            isExpanded = true; // Update menu state
+        }
+    });
+});
+    </script>
+</body>
+</html>
