@@ -583,7 +583,7 @@ a:is(:hover, :focus) figcaption {
     background-color: #c7c7c7;
 }
 .top-map {
-    max-width: 1200px;
+    max-width: 1050px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -595,13 +595,13 @@ a:is(:hover, :focus) figcaption {
 
 .top-map iframe {
     height: 13rem;
-    width: 50rem;
+    width: 40rem;
     border-radius: 11px;
     margin-bottom: 1rem;
 }
 
 .contact-form {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 2rem auto 2rem auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -690,6 +690,10 @@ label p {
     grid-template-columns: repeat(3, 1fr);
     padding: 2.5rem 3rem;
     gap: 5rem;
+}
+
+.container .service-grid div {
+    margin-bottom: 2rem;
 }
 
 #massaufnahme, #projektleitung {
