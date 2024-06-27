@@ -437,7 +437,6 @@ a:is(:hover, :focus) figcaption {
     display: none;
     position: fixed;
     z-index: 1000;
-    padding-top: 50px;
     left: 0;
     top: 0;
     width: 100%;
@@ -447,13 +446,14 @@ a:is(:hover, :focus) figcaption {
     transition: opacity 0.5s ease, visibility 0.5s ease;
     opacity: 0;
     visibility: hidden;
+    display: flex; /* Added */
+    justify-content: center; /* Added */
+    align-items: center; /* Added */
 }
 
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+    width: 90%; /* Adjusted */
+    max-width: 800px; /* Adjusted */
     transition: transform 0.5s ease;
     transform: scale(0.7);
 }
@@ -505,10 +505,11 @@ a:is(:hover, :focus) figcaption {
 }
 
 .modal.show {
-    display: block;
+    display: flex; /* Changed from block to flex */
     opacity: 1;
     visibility: visible;
 }
+
 
 .modal.show .modal-content {
     transform: scale(1);
