@@ -112,7 +112,7 @@ nav.mobile-nav ul a {
         30deg,
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0)),
-        url(images/stahlgerüst.jpg);
+        url(images/stahlgerüst-konstruktionsbau.webp);
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -188,7 +188,7 @@ h3 {
         30deg,
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0)),
-        url(images/glas-fassadenfront.png);
+        url(images/glas-fassadenfront-architektur.webp);
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -278,10 +278,15 @@ h3 {
     height: 24rem;
     width: auto;
     margin: 0 auto;
-    transition: box-shadow 0.25s ease;
+    filter: grayscale(100%);
+    transition: filter 0.25s ease, box-shadow 0.25s ease; /* Transition für Filter und box-shadow */
+    cursor: pointer;
+    display: block;
 }
+
 .newpic:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    filter: grayscale(0%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Hinzufügen eines box-shadow-Effekts bei Hover */
 }
 
 .third-row {
@@ -298,6 +303,13 @@ h3 {
 }
 
 /* -------------------- REFERENZEN -------------------- */
+.salü-top {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1300px;
+    justify-content: space-around;
+    padding: 3rem 0 1rem 0;
+}
 .ref-pic {
     display: flex;
     margin: 0 auto 0rem auto;
@@ -743,7 +755,14 @@ footer p, footer .links, footer .icons {
 }
 footer a {
     color: white;
+    text-decoration: none;
+}
+footer .links a {
     padding: 0 2rem;
+    text-decoration: underline;
+}
+.zeiler {
+    padding: 0.22rem;
 }
 
 /* -------------------- MEDIA QUERYS -------------------- */
