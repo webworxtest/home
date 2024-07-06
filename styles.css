@@ -2,15 +2,10 @@
     padding: 0;
     margin: 0;
 }
-
-
-
 body {
     font-family: Raleway;
 }
-
 /* -------------------- NAVIGATION -------------------- */
-
 nav.desktop-nav {
     display: block;
     position: fixed;
@@ -23,37 +18,31 @@ nav.desktop-nav {
     font-weight: 500;
     z-index: 1000; /* Ensure desktop nav is above other elements */
 }
-
 nav.desktop-nav ul {
     display: block;
     padding-top: 50px;
     list-style: none;
 }
-
 nav.desktop-nav ul li {
     margin-top: 20px;
     padding: 10px 0 10px 50px;
     transition: 0.2s;
 }
-
 nav.desktop-nav ul li:hover {
     background-color: white;
     color: black;
     font-weight: 650;
 }
-
 nav.desktop-nav ul a {
     color: white;
     text-decoration: none;
 }
-
 nav.desktop-nav ul img {
     height: 250px;
     width: auto;
     margin: 0 auto;
     padding-left: 1.4rem;
 }
-
 nav.mobile-nav {
     display: none;
     position: absolute;
@@ -65,34 +54,28 @@ nav.mobile-nav {
     font-weight: 500;
     z-index: 1001; /* Ensure mobile nav is above other elements */
 }
-
 nav.mobile-nav ul {
     display: none;
     list-style: none;
     padding-top: 50px;
 }
-
 nav.mobile-nav ul.collapsed {
     display: block;
 }
-
 nav.mobile-nav ul li {
     padding: 10px 0;
     text-align: center;
     transition: background-color 0.2s;
 }
-
 nav.mobile-nav ul li:hover {
     background-color: white;
     color: black;
     font-weight: 650;
 }
-
 nav.mobile-nav ul a {
     color: white;
     text-decoration: none;
 }
-
 #menuBtn {
     display: none;
     position: absolute;
@@ -105,9 +88,7 @@ nav.mobile-nav ul a {
     transition: transform 0.4s;
     z-index: 1002; /* Ensure menu button is above other elements */
 }
-
 /* -------------------- HOME-SECTION -------------------- */
-
 #home {
     min-height: 100vh;
     width: 100%;
@@ -120,32 +101,27 @@ nav.mobile-nav ul a {
     background-size: cover;
     overflow: hidden;
 }
-
 .spreader {
     display: grid;
     grid-template-columns: 3fr 3.7fr;
     padding-top: 18rem;
 }
-
 .main-title {
     padding: 0 4rem 2rem 2rem;
     padding-bottom: 5rem;
 }
-
 .rest-h1 {
     font-family: "Montserrat-Alt1";
     text-align: center;
     padding: 3rem 0;
     font-size: 4.5rem;
 }
-
 .h1_1 {
     font-family: "Montserrat-Alt1";
     text-align: left;
     color: white;
     font-size: 5.5rem;
 }
-
 h2 {
     color: white;
     font-weight: 400;
@@ -153,15 +129,12 @@ h2 {
     font-size: 1.8rem;
     margin-bottom: 3rem;
 }
-
 h3 {
     text-align: center;
     font-size: 1.6rem;
     margin-top: 0.8rem;
     font-weight: 500;
 }
-
-
 .main-title > a {
     color: white;
     text-decoration: none;
@@ -175,14 +148,11 @@ h3 {
     margin: 0 auto;
     transition: 0.2s;
 }
-
 .main-title > a:hover {
     color: black;
     background-color: white;
     font-weight: 700;
 }
-
-
 /* -------------------- DIENSTLEISTUNGEN -------------------- */
 #dienstleistungen {
     min-height: 100svh;
@@ -196,22 +166,18 @@ h3 {
     background-size: cover;
     overflow: hidden;
 }
-
 .right-container {
     margin-left: 270px;
     flex: 1;
 }
-
 .right-container a {
     text-decoration: none;
     color: black;
 }
-
 .top-container {
     width: 100%;
     background-color: #c7c7c7;
 }
-
 .first-row {
     display: flex;
     justify-content: space-around;
@@ -241,14 +207,12 @@ h3 {
     transform: scale(1.06);
     filter: invert(100%);
 }
-
 .asset img {
     height: 90px;
     width: auto;
     filter: invert(100%);    
     transition: transform 0.4s ease, filter 0.4s ease;
 }
-
 .asset2 img {
     height: 180px;
     width: 180px;
@@ -256,11 +220,9 @@ h3 {
     filter: saturate(1.0);
     transition: filter 0.3s ease;
 }
-
 .asset2 img:hover {
     filter: saturate(0);
 }
-
 .second-row {
     max-width: 1000px;
     margin: 0 auto;
@@ -269,7 +231,6 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 60px;
 }
-
 .mini-h3 {
     font-family: "Montserrat-Alt1";
     font-size: 3rem;
@@ -286,12 +247,10 @@ h3 {
     cursor: pointer;
     display: block;
 }
-
 .newpic:hover {
     filter: grayscale(0%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Hinzufügen eines box-shadow-Effekts bei Hover */
 }
-
 .third-row {
     display: flex;
     justify-content: space-around;
@@ -313,53 +272,44 @@ h3 {
     justify-content: space-around;
     padding: 3rem 0 1rem 0;
 }
-
 .ref-pic {
     display: flex;
     margin: 0 auto 0rem auto;
     width: 7rem;
     height: auto;
 }
-
 .referenz {
     max-width: 380px;
     overflow: hidden;
     margin: 0 auto;
 }
-
 .referenz img {
     width: 100%;
     transition: transform 0.4s ease;
     filter: saturate(1.0);
 }
-
 .referenz:hover img {
     transform: scale(1.035);
     filter: saturate(0);
 }
-
 .referenz:hover .referenz-bio {
     background-color: #868686;
 }
-
 .referenz-bio {
     padding: 0.8rem 0.5rem;
     background-color: #b4b4b4;
     transition: 0.4s, filter 0.7s ease;
 }
-
 /* REFERENZ EINZEL */
 .hiden-h3 {
     display: none;
     margin-bottom: 1rem;
 }
-
 .right-bottom {
     display: flex;
     justify-content: center;
     margin: 3rem 0;
 }
-
 .right-bottom img {
     width: 100%;
     display: block;
@@ -367,12 +317,10 @@ h3 {
     object-fit: cover;
     transition: transform 1000ms;
 }
-
 .right-bottom img:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
-
 ul {
     list-style: none;
     margin: 0;
@@ -383,13 +331,11 @@ ul {
     max-width: 100%;
     width: 70rem;
 }
-
 figure {
     margin: 0;
     position: relative;
     overflow: hidden;
 }
-
 figure::after {
     content: '';
     position: absolute;
@@ -403,7 +349,6 @@ figure::after {
     transform: scale(1.8);
     transition: opacity 200ms;
 }
-
 figcaption {
     position: absolute;
     top: 0;
@@ -421,43 +366,35 @@ figcaption {
     opacity: 0;
     transition: opacity 400ms, transform 400ms;
 }
-
 a:is(:hover, :focus) figure::after {
     opacity: 1;
 }
-
 a:is(:hover, :focus) figcaption {
     opacity: 1;
     transition: opacity 600ms;
 }
-
 @media (prefers-reduced-motion: no-preference) {
     figcaption {
         transform: translate3d(0, 2rem, 0);
     }
-    
     figure::after {
         border-radius: 50%;
         opacity: 1;
         transform: scale(0);
         transition: transform 900ms;
     }
-    
     .right-bottom a:is(:hover, :focus) figure::after {
         transform: scale(2.2);
     }
-
     .right-bottom a:is(:hover, :focus) figcaption {
         opacity: 1;
         transform: translate3d(0, 0, 0);
         transition: opacity 400ms 400ms, transform 400ms 400ms;
     }
-
     .right-bottom a:is(:hover, :focus) img {
         transform: scale(1.1);
     }
 }
-
 /* Modal styles */
 .modal {
     display: none;
@@ -476,14 +413,12 @@ a:is(:hover, :focus) figcaption {
     justify-content: center; /* Added */
     align-items: center; /* Added */
 }
-
 .modal-content {
     width: 90%; /* Adjusted */
     max-width: 800px; /* Adjusted */
     transition: transform 0.5s ease;
     transform: scale(0.7);
 }
-
 .modal .close {
     position: absolute;
     top: 15px;
@@ -494,14 +429,12 @@ a:is(:hover, :focus) figcaption {
     transition: color 0.3s;
     cursor: pointer;
 }
-
 .modal .close:hover,
 .modal .close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
-
 .modal .prev,
 .modal .next {
     cursor: pointer;
@@ -516,33 +449,25 @@ a:is(:hover, :focus) figcaption {
     transition: background-color 0.6s;
     user-select: none;
 }
-
 .modal .prev {
     left: 0;
 }
-
 .modal .next {
     right: 0;
 }
-
 .modal .prev:hover,
 .modal .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 .modal.show {
     display: flex; /* Changed from block to flex */
     opacity: 1;
     visibility: visible;
 }
-
-
 .modal.show .modal-content {
     transform: scale(1);
 }
-
 /* -------------------- ÜBER MICH -------------------- */
-
 .flex-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -613,14 +538,12 @@ a:is(:hover, :focus) figcaption {
 .top-map h3 {
     text-align: left;
 }
-
 .top-map iframe {
     height: 13rem;
     width: 40rem;
     border-radius: 11px;
     margin-bottom: 1rem;
 }
-
 .contact-form {
     max-width: 1000px;
     margin: 2rem auto 2rem auto;
@@ -690,7 +613,6 @@ label p {
 .checkbox-container a {
     text-decoration: underline;
 }
-
 /* -------------------- SERVICE -------------------- */
 .container {
     margin: 3rem 0;
@@ -734,6 +656,10 @@ label p {
 .containers h3 {
     text-align: left;
 }
+/* -------------------- IMPRESSUM -------------------- */
+.trenner {
+    padding: 0.2rem 0;
+}
 /* -------------------- FOOTER -------------------- */
 footer {
     background-color: #202020; 
@@ -773,7 +699,6 @@ footer .links a {
 .zeiler {
     padding: 0.22rem;
 }
-
 /* -------------------- MEDIA QUERYS -------------------- */
 @media screen and (max-width: 1300px) {
     .third-row {
