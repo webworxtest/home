@@ -314,6 +314,7 @@ h3 {
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.9); /* Leicht transparenter weißer Hintergrund */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 #beratung, #massaufnahme, #planung, #projektleitung, #DreiD_druck {
     color: #fff;
@@ -323,35 +324,29 @@ h3 {
 #beratung {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/beratung-konstruktionsplanung.webp') center/cover fixed;
 }
-
 #massaufnahme {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/massaufnahme-für-metallbauobjekt.webp') center/cover fixed;
 }
-
 #planung {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/konstrukteur-zeichnet-pläne-2d-3d.webp') center/cover fixed;
 }
-
 #projektleitung {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/projektleiter-blickt-auf-konstruktions-pläne.webp') center/cover fixed;
 }
 #DreiD_druck {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/3d-drucker-modelldruck.webp') center/cover fixed;
 }
-
 #beratung img, #massaufnahme img, #planung img, #projektleitung img, #DreiD_druck img {
     filter: invert(100%);
     max-width: 100%;
     border-radius: 8px;
     padding-bottom: 4rem;
 }
-
 .service-grid h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #333;
 }
-
 .service-grid p {
     font-size: 1rem;
     line-height: 1.6;
