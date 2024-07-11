@@ -3,7 +3,7 @@
     margin: 0;
 }
 body {
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
 }
 /* -------------------- NAVIGATION -------------------- */
 nav.desktop-nav {
@@ -14,26 +14,28 @@ nav.desktop-nav {
     height: 100vh;
     width: 270px;
     background-color: rgba(0, 62, 250, 0.86);
-    font-size: 1.4rem;
-    font-weight: 500;
-    z-index: 1000; /* Ensure desktop nav is above other elements */
+    z-index: 1000;
+    overflow-y: auto; /* Scrollbar hinzufügen, wenn Navigation zu lang wird */
 }
 nav.desktop-nav ul {
-    display: block;
     padding-top: 50px;
+    margin: 0;
     list-style: none;
 }
 nav.desktop-nav ul li {
-    margin-top: 20px;
-    padding: 10px 0 10px 50px;
-    transition: 0.2s;
+    padding: 20px 1rem;
+    transition: border-color 0.3s, color 0.3s, font-weight 0.3s;
+    border-left: 5px solid transparent;
 }
 nav.desktop-nav ul li:hover {
-    background-color: white;
-    color: black;
-    font-weight: 650;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-weight: bold;
+    border-left-color: white; /* Border-Farbe ändert sich beim Hover */
 }
 nav.desktop-nav ul a {
+    display: block;
+    padding: 10px 20px;
     color: white;
     text-decoration: none;
 }
@@ -41,8 +43,8 @@ nav.desktop-nav ul img {
     height: 250px;
     width: auto;
     margin: 0 auto;
-    padding-left: 1.4rem;
 }
+/* MOBILE NAV */
 nav.mobile-nav {
     display: none;
     position: absolute;
@@ -50,28 +52,35 @@ nav.mobile-nav {
     left: 0;
     width: 100%;
     background-color: rgba(0, 62, 250, 0.6);
-    font-size: 1.4rem;
+    font-size: 1rem; /* Anpassung der Schriftgröße */
+    line-height: 2; /* Anpassung der Zeilenhöhe */
     font-weight: 500;
-    z-index: 1001; /* Ensure mobile nav is above other elements */
+    z-index: 1001;
 }
+
 nav.mobile-nav ul {
     display: none;
     list-style: none;
     padding-top: 50px;
 }
+
 nav.mobile-nav ul.collapsed {
     display: block;
 }
+
 nav.mobile-nav ul li {
     padding: 10px 0;
     text-align: center;
     transition: background-color 0.2s;
+    font-weight: normal;
+    transition: font-weight 0.3s;
 }
+
 nav.mobile-nav ul li:hover {
-    background-color: white;
-    color: black;
-    font-weight: 650;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: bold; /* Anpassung der Schriftstärke beim Hover */
 }
+
 nav.mobile-nav ul a {
     color: white;
     text-decoration: none;
@@ -79,7 +88,7 @@ nav.mobile-nav ul a {
 #menuBtn {
     display: none;
     position: absolute;
-    left: 46%;
+    left: 50%;
     top: 10px;
     width: 40px;
     height: 40px;
@@ -87,6 +96,7 @@ nav.mobile-nav ul a {
     filter: invert(100%);
     transition: transform 0.4s;
     z-index: 1002; /* Ensure menu button is above other elements */
+    margin-left: -20px; /* Die Hälfte der Breite des Buttons */
 }
 /* -------------------- HOME-SECTION -------------------- */
 #home {
@@ -108,7 +118,6 @@ nav.mobile-nav ul a {
 }
 .main-title {
     padding: 0 4rem 2rem 2rem;
-    padding-bottom: 5rem;
 }
 .rest-h1 {
     font-family: "Montserrat-Alt1";
@@ -760,17 +769,20 @@ footer .links a {
     }
     .main-title > a {
         background-color: rgba(0, 0, 0, 0.6);
+        margin: 0 auto;
     }
 
     .right-container, footer p, footer .links, footer .icons {
         margin-left: 0;
     }
     .spreader {
-        grid-template-columns: repeat(1, 1fr);
-        padding-top: 13rem;
+        display: block;
+        padding-top: 7rem;
+        margin: 0 auto;
     }
     .main-title {
-        text-align: center;
+        text-align: center;    
+        padding: 0;
     }
     .h1_1 {
         font-size: 3.9rem;
@@ -809,7 +821,6 @@ footer .links a {
     }
     .top-map {
         display: block;
-        margin: -2rem;
         padding: 1.3rem 2rem 0 2rem;
     }
     .top-map > h3 {
@@ -818,7 +829,7 @@ footer .links a {
     .top-map iframe {
         height: 13rem;
         width: 100%;
-        padding: 1rem 1rem;
+        padding: 1rem 0;
     }
     .service-grid {
         display: block;
