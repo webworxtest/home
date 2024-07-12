@@ -292,7 +292,7 @@ h3 {
 }
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     text-align: left;
     padding: 2rem;
@@ -777,6 +777,12 @@ footer .links a {
         margin: 0 auto;
         padding-bottom: 2rem;
         max-width: 500px;
+    }
+    .service-grid {
+        display: block;
+    }
+    .service-grid div {
+        margin-bottom: 2rem;
     }
 }
 @media screen and (max-width: 1000px) {
