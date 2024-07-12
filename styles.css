@@ -15,7 +15,7 @@ nav.desktop-nav {
     width: 270px;
     background-color: rgba(0, 62, 250, 0.86);
     z-index: 1000;
-    overflow-y: auto; /* Scrollbar hinzufügen, wenn Navigation zu lang wird */
+    overflow: hidden;
 }
 nav.desktop-nav ul {
     padding-top: 50px;
