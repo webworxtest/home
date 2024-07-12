@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: 'Raleway', sans-serif;
@@ -322,19 +323,19 @@ h3 {
     position: relative; /* Für das z-index-Management */
 }
 #beratung {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/beratung-konstruktionsplanung.webp') center/cover fixed;
+    background: linear-gradient(rgba(0, 22, 87, 0.66), rgba(0, 22, 87, 0.66)), url('images/beratung-konstruktionsplanung.webp') center/cover fixed;
 }
 #massaufnahme {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/massaufnahme-für-metallbauobjekt.webp') center/cover fixed;
+    background: linear-gradient(rgba(0, 22, 87, 0.66), rgba(0, 22, 87, 0.66)), url('images/massaufnahme-für-metallbauobjekt.webp') center/cover fixed;
 }
 #planung {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/konstrukteur-zeichnet-pläne-2d-3d.webp') center/cover fixed;
+    background: linear-gradient(rgba(0, 22, 87, 0.66), rgba(0, 22, 87, 0.66)), url('images/konstrukteur-zeichnet-pläne-2d-3d.webp') center/cover fixed;
 }
 #projektleitung {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/projektleiter-blickt-auf-konstruktions-pläne.webp') center/cover fixed;
+    background: linear-gradient(rgba(0, 22, 87, 0.66), rgba(0, 22, 87, 0.66)), url('images/projektleiter-blickt-auf-konstruktions-pläne.webp') center/cover fixed;
 }
 #DreiD_druck {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/3d-drucker-modelldruck.webp') center/cover fixed;
+    background: linear-gradient(rgba(0, 22, 87, 0.66), rgba(0, 22, 87, 0.66)), url('images/3d-drucker-modelldruck.webp') center/cover fixed;
 }
 #beratung img, #massaufnahme img, #planung img, #projektleitung img, #DreiD_druck img {
     filter: invert(100%);
