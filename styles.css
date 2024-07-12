@@ -635,7 +635,7 @@ a:is(:hover, :focus) figcaption {
 .contact-form {
     max-width: 1000px;
     margin: 2rem auto 2rem auto;
-    padding: 20px;
+    padding: 2rem 2rem 2rem 0.5rem;
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 5px;
@@ -704,6 +704,9 @@ label p {
 /* -------------------- IMPRESSUM -------------------- */
 .trenner {
     padding: 0.2rem 0;
+}
+.containers {
+    padding: 1.5rem;
 }
 /* -------------------- FOOTER -------------------- */
 footer {
