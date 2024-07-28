@@ -319,6 +319,7 @@ h3 {
 }
 .pmiddle {
     text-align: center;
+    font-weight: 600;
 }
 #beratung, #massaufnahme, #planung, #projektleitung, #DreiD_druck {
     color: #fff;
