@@ -321,7 +321,7 @@ h3 {
     text-align: center;
     font-weight: 600;
 }
-#beratung, #massaufnahme, #planung, #projektleitung, #DreiD_druck {
+#beratung, #massaufnahme, #planung, #projektleitung, #DreiD_druck, #drohnenaufnahmen {
     color: #fff;
     padding-top: 6rem; /* Platz für den fixierten Titel */
     position: relative; /* Für das z-index-Management */
@@ -341,7 +341,10 @@ h3 {
 #DreiD_druck {
     background: linear-gradient(rgba(0, 22, 87, 0.66), rgba(0, 22, 87, 0.66)), url('images/3d-drucker-modelldruck.webp') center/cover fixed;
 }
-#beratung img, #massaufnahme img, #planung img, #projektleitung img, #DreiD_druck img {
+#drohnenaufnahmen {
+    background: linear-gradient(rgba(0, 22, 87, 0.66), rgba(0, 22, 87, 0.66)), url('images/drohne.webp') center/cover fixed;
+}
+#beratung img, #massaufnahme img, #planung img, #projektleitung img, #DreiD_druck img, #drohnenaufnahmen img {
     filter: invert(100%);
     max-width: 100%;
     border-radius: 8px;
